@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/App';
@@ -7,7 +8,7 @@ import './style/style.scss';
 
 const marvelService = new MarvelService();
 
-marvelService.getCaracter(1011052).then(res => console.log(res));
+marvelService.getAllCaracters().then(res => console.log(res));
 
 ReactDOM.render(
   <React.StrictMode>

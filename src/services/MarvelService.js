@@ -1,7 +1,14 @@
+// require('dotenv').config()
+// import 'dotenv/config'
+
+// console.log(process.env.REACT_APP_API_KEY)
+// console.log(process.env.REACT_APP_MARVEL_API_KEY);
 
 class MarvelService {
+    
     _apiBase = 'https://gateway.marvel.com:443/v1/public/';
-    _apiKey = 'apikey=68139df10d4401aef4db0f67c621ba5d';
+    _apiKey = process.env.REACT_APP_MARVEL_API_KEY;
+    
 
     getResource = async (url) => {
         let res = await fetch(url);
