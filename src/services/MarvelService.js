@@ -1,8 +1,4 @@
-// require('dotenv').config()
-// import 'dotenv/config'
 
-// console.log(process.env.REACT_APP_API_KEY)
-// console.log(process.env.REACT_APP_MARVEL_API_KEY);
 
 class MarvelService {
     
